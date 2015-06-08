@@ -16,16 +16,21 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
+		  <a class="navbar-brand logo" rel="home" href="#" title="Logo Title">
+		         <%= image_tag asset_path("assets/navbarlogo.png"), class: "image-responsive"%>
+				 
+				 
+		     </a>
 	      
 	    </div>
 	    <div class="collapse navbar-collapse" id="main-nav-collapse">
-	      <ul class="nav navbar-nav navbar-right">
+	      <ul class="nav navbar-nav navbar-right navbar-text">
 	        <li><%= link_to "About", about_path, class: 'navbar-brand' %></li>
 	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
+	      <ul class="nav navbar-nav navbar-right navbar-text">
 	        <li><%= link_to "Services", services_path, class: 'navbar-brand' %></li>
 	      </ul>
-		  <ul class="nav navbar-nav navbar-right">
+		  <ul class="nav navbar-nav navbar-right navbar-text">
 		  	<%= link_to 'Home', root_path, class: 'navbar-brand' %>
 		  </ul>
 	    </div><!-- /.navbar-collapse -->
